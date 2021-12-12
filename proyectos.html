@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link icon-->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Project Dev</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="inicio.html"> <i class="fas fa-tasks"></i>ProjectDev</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+
+          <ul class = "navbar-nav">
+            <li class = "navbar nav-item dropdown active"><a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Proyectos</a>
+
+             <ul class = "dropdown-menu">
+              <li><a href = "#" class =  "dropdown-item">Crear proyectos</a>
+              
+              </li>
+              <li><a href = "tareas.html" class =  "dropdown-item">Tareas</a></li>
+              
+            </ul>
+            <li class = "navbar nav-item"><a href = "dev.html" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Servicios</a>
+              <ul class = "dropdown-menu">
+                <li><a href = "dev.html" class =  "dropdown-item">Developer</a></li>
+              </ul>
+            <li class = "navbar nav-item"><a href = "#" class = "nav-link">Nosotros</a></li>
+            <li class = "navbar nav-item"><a href = "#" class = "nav-link">Contactos</a></li>
+          </li>
+        </ul>
+    
+        </div>
+        </nav>
+        <br><br>
+        
+       <!-- Button modal -->
+<button type="button" class="btnproject btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  Crear proyectos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h5 class="modal-title" id="staticBackdropLabel">Nuevo proyecto</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action = "#">
+
+          <fieldset>
+
+              <div class="form-group row">
+                <label for="name" class="font-weight-bold text-dark col-m-4 ml-3 col-form-label">Name Project</label>
+                <div class="col-sm-5 ml-3">
+                  <input type="text" class="form-control" id="staticEmail" placeholder="SA.IN">
+                </div>
+              </div>
+
+
+              <div class="col-sm-5">
+                  <label for="Company" class="font-weight-bold text-dark form-label mt-4">Name Company</label>
+                  <input type="text" class="form-control" placeholder="Company">
+                </div>
+
+                <div class="col-sm-5">
+                  <label for="Date" class="font-weight-bold text-dark form-label mt-4">Fecha Inicio</label>
+                  <input type="text" class="form-control" placeholder="2021-10-12">
+                </div>
+
+                <div class="col-sm-5">
+                  <label for="Date" class="font-weight-bold text-dark form-label mt-4">Fecha finalizacion</label>
+                  <input type="text" class="form-control" placeholder="2023-11-1">
+                </div>
+
+                <div class="form-group">
+                  <label for="formFile" class="font-weight-bold form-label mt-4">Default file input example</label>
+                  <input class="font-weight-bold form-control" type="file" id="formFile">
+                </div>
+
+          
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Crear proyecto</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+        <h1 class = "text-center">Proyectos</h1>
+
+
+        <br><br>
+        <div>
+          
+          <table class = "table table-hover">
+
+            <tr class="table-dark">
+              <th scope="col">Nombre clave</th>
+              <th scope="col">Empresa</th>
+              <th scope="col">Fecha inicio</th>
+              <th scope="col">Fecha finalizacion</th>
+            </tr>
+
+            <tbody>
+              
+              <tr class="table-active">
+                <th scope="row">BGD</th>
+                <td>BG DEV</td>
+                <td>2021-6-17</td>
+                <td>2021-30-12</td>
+
+              </tr>
+
+            
+
+              <tr class="table-warning ">
+                <th scope="row">EG</th>
+                <td>EG TECHNOLOGY</td>
+                <td>0-0-0</td>
+                <td>0-0-0</td>
+              </tr>
+
+              <tr class="table-info ">
+                <th scope="row">APPLE</th>
+                <td>APPLE.IN</td>
+                <td>2021-7-30</td>
+                <td>2021-12-20</td>
+              </tr>
+
+              <tr class="table-dark">
+                <th scope="row">DELL</th>
+                <td>DELL TECNOLOGY</td>
+                <td>2021-9-25</td>
+                <td>2021-12-21</td>
+              </tr>
+
+              </tbody>
+
+              
+          </table>
+          <div>
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+
+            <div class = "bg-black list-group-item list-group-item-action flex-column align-items-start active">
+                <h5 class = "mb-1 ">Estado actual proyectos</h5>
+                
+            <div class = "progress m-5">
+              <div class = "progress-bar- bg-danger progress-bar-striped progress-bar-animated " style="width: 45%;">
+                <span class = "text-black"><h6>BG DEV</h6></span>
+              </div>
+          </div>
+
+          <div class = "progress m-5">
+            <div class = "progress-bar- bg-white progress-bar-striped progress-bar-animated " style="width: 0%;"> 
+              <span class = "text-black"><h6>EG</h6></span>
+            </div>
+        </div>
+
+        <div class = "progress m-5">
+          <div class = "progress-bar- bg-success progress-bar-striped progress-bar-animated " style="width: 75%;">
+            <span class = "text-black"><h6>APPLE</h6></span>
+          </div>
+      </div>
+
+      <div class = "progress m-5">
+        <div class = "progress-bar- bg-warning progress-bar-striped progress-bar-animated " style="width: 25%;">
+          <span class = "text-black"><h6></h6>DELL TECNOLOGY</h6></span>
+        </div>
+    </div>
+  </div>
+      
+        </div>
+        </div>
+        </div>
+        </div>
+    
+        <!----->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>

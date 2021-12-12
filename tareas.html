@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   <link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <!--Link icon-->
+   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Tareas</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="inicio.html"> <i class="fas fa-flask"></i>ProjectDev</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+            
+          </button>
+
+          <ul class = "navbar-nav">
+            <li class = "navbar nav-item dropdown active"><a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Tareas</a>
+
+             <ul class = "dropdown-menu">
+              <li><a href = "#" class =  "dropdown-item">Crear tareas</a></li>
+              <li><a href = "proyectos.html" class =  "dropdown-item">Proyectos</a></li>
+              
+            </ul>
+             <li class = "navbar nav-item"><a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Servicios</a>
+              <ul class = "dropdown-menu">
+                <li><a href = "dev.html" class =  "dropdown-item">Developer</a></li>
+              </ul>
+            <li class = "navbar nav-item"><a href = "#" class = "nav-link">Nosotros</a></li>
+            <li class = "navbar nav-item"><a href = "#" class = "nav-link">Contactos</a></li>
+          </li>
+        </ul>
+
+        </div>
+        </nav>
+        <div>
+          <h5 class = "h5tareas">Invite Team Members <a href="#"><i class="fas fa-user-plus"></i></a></h5>
+        </div>
+        <br>
+
+        <h2 class = "m-5">Team Projects</h2>
+
+        <div>
+          <button type="button" class="btntareas btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            Crear tareas
+          </button>
+
+          <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+          
+                  <h5 class="modal-title" id="staticBackdropLabel">Nueva tarea</h5>
+          
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+          
+                <div class="modal-body">
+          
+                  <form action = "#">
+          
+                    <fieldset>
+          
+                        <div class="form-group row">
+                          <label for="name" class="font-weight-bold text-dark col-m-4 ml-3 col-form-label">Name task</label>
+                          <div class="col-sm-5 ml-3">
+                            <input type="text" class="form-control" id="staticEmail" placeholder="input #Error">
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-sm-5">
+                            <label for="Company" class="font-weight-bold text-dark form-label mt-4">Encargado de tarea</label>
+                            <input type="text" class="form-control" placeholder="Adolfo Pimentel">
+                          </div>
+          
+                          <div class="col-sm-5">
+                            <label for="Date" class="font-weight-bold text-dark form-label mt-4">Fecha Inicio</label>
+                            <input type="text" class="form-control" placeholder="2021-10-12">
+                          </div>
+          
+                          <div class="col-sm-5">
+                            <label for="Date" class="font-weight-bold text-dark form-label mt-4">Fecha finalizacion</label>
+                            <input type="text" class="form-control" placeholder="2023-11-1">
+                          </div>
+
+                          <div class="form-group">
+                            <label for="formFile" class="font-weight-bold form-label mt-4">Default file input example</label>
+                            <input class="font-weight-bold form-control" type="file" id="formFile">
+                          </div>
+          
+                    
+                  </form>
+                </div>
+          
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Asignar tarea</button>
+          
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <div class="pannel d-flex">
+                <ul class = "list-group  d-md-inline-block m-4">
+                    <h4 class = "Month">Para este mes</h4>
+                    <li class = "list-group-item border-danger">Diseñar pagina web</li>
+                    <li class = "list-group-item border-success">Comprar dominio </li>
+                    <li class = "list-group-item border-warning">Ordenar tickets </li>
+                    <li class = "list-group-item border-primary">Administar team </li>
+                </ul>
+        
+                <br><br>
+
+
+                <div>
+                    <table class =" border border-5 r tableuser table table-dark table-bordered table-striped table-hover m-5">
+
+                <thead>
+
+                  
+                          <tr>
+                            <th scope="col">Diseño</th>
+                            <th scope="col">Dominio</th>
+                            <th scope="col">Testing</th>
+                            <th scope="col">Lanzamiento</th>
+                            
+                          </tr>
+
+                        <tbody>
+
+                    <tr class="border-5 border border-white h-100">
+                        <th class = "table-success" scope = "col">Done</th>
+                        <th class = "table-warning" scope = "col">Working on it</th>
+                        <th class = "table-danger"  scope = "col">No proccesing</th>
+                        <th class = "table-warning" scope = "col">Working on it</th>
+                      </tr>
+
+                      <i class="fas fa-user"> Adolfo Pimentel</i>
+    
+                      
+                  
+                        <tr class="table border-5 border border-white ">
+                          <th class = "table-success" scope="row">Done</th>
+                          <td class = "table-success">Done</td>
+                          <td class = "table-warning">Working on it</td>
+                          <td class = "table-danger">no proccesing</td>
+          
+                        </tr>
+                        <i class="fas fa-user"> Perla Pimentel</i>
+
+
+                         <tr class="table border-5 border border-white">
+                          <th class = "table-success" scope="row">Done</th>
+                          <td class = "table-dark">*NONE*</td>
+                          <td class = "table-warning">Working on it</td>
+                          <td class = "table-danger">no proccesing</td>
+            
+                          </tr>
+                        </tbody>
+                    
+                    </table>
+
+                          
+                </table>
+
+                <br>
+
+                <i class="fas fa-user"> Bryan Jimenez</i>
+
+                <div class ="">
+                    <table class =" border border-5  tableuser table table-dark table-bordered table-striped table-hover m-5 h-100">
+
+                <thead>
+                          <tr>
+                            <th scope="col">Diseño</th>
+                            <th scope="col">Dominio</th>
+                            <th scope="col">Testing</th>
+                            <th scope="col">Lanzamiento</th>
+                            
+                          </tr>
+
+                        </thead>
+
+                        <tbody>
+                    <tr class="table border-5 border border-white h-100">
+                        <th scope="col">*NONE*</th>
+                        <th scope="col">*NONE*</th>
+                        <th scope="col">*NONE*</th>
+                        <th scope="col">*NONE*</th>
+                      </tr>
+    
+                      
+                  
+                        <tr class="table border-5 border border-white">
+                          <th class = "table-success" scope="row">Done</th>
+                          <td class = "table-success">Done</td>
+                          <td class = "table-warning">Working on it</td>
+                          <td class = "table-danger">no proccesing</td>
+          
+                        </tr>
+
+                         <tr class="table border-5 border border-white ">
+                          <th class = "table-success" scope="row">Done</th>
+                          <td class = "">*NONE*</td>
+                          <td class = "table-warning">Working on it</td>
+                          <td class = "table-danger">no proccesing</td>
+            
+                          </tr>
+                        </tbody>
+                    
+                    </table>
+                
+            </div>
+
+            
+            
+            </div>
+           
+
+           
+
+        
+
+        <!--<i class = "fas fa-bell">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+          </i>-->
+
+
+
+
+          <!----->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>
